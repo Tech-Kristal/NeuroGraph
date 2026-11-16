@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neurograph"
+version = "0.1.0"
+description = "A persistent, interactive knowledge graph and intelligence platform."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "networkx>=3.2",
+    "numpy>=1.26",
+    "PyQt6>=6.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+neurograph = "neurograph.app:main"
+
+[tool.setuptools.packages.find]
+include = ["neurograph*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
