@@ -73,7 +73,7 @@ The project focuses on transforming isolated information into structured knowled
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/Tech-Kristal/NeuroGraph
 cd NeuroGraph
 ```
 
